@@ -1,0 +1,90 @@
+.todolist_wrapper{
+    height: auto;
+    width: 400px;
+    background-color: rgba(215, 215, 215, 0.512);
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.279);
+}
+.search_list{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0 ;
+    justify-content: center;
+
+}
+.btn{
+    width: 120px;
+    height: 40px;
+}
+.h1.text-danger{
+    padding: 10px 0;
+}
+.btn-delete{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.btn-edit{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.name_box{
+    line-height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.heading{
+    text-align: left;
+    padding: 20px 0 10px;
+}
+.todo_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.model_delete-box, .model_update-box, .model_create-box{
+    height: auto;
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 3px black;
+    position: absolute;
+    z-index: 200;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+.model_create-box.hidden, .model_delete-box.hidden, .model_update-box.hidden, .overlay.hidden{
+    display: none;
+}
+.model_create-box.show, .model_delete-box.show, .model_update-box.show, .overlay.show{
+    display: block;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.455);
+
+}
+
+
